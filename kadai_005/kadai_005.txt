@@ -1,14 +1,4 @@
 PS C:\Users\bloss\OneDrive\デスクトップ\git_tutorial> cd C:\Users\bloss\OneDrive\デスクトップ\git_challenge
-PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> mkdir git_challenge
-mkdir : 指定された名前 C:\Users\bloss\OneDrive\デスクトップ\git_challenge\git_challenge の項目は既
-に存在します。
-発生場所 行:1 文字:1
-+ mkdir git_challenge
-+ ~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : ResourceExists: (C:\Users\bloss\...e\git_challenge:String) [New-Ite 
-   m], IOException
-    + FullyQualifiedErrorId : DirectoryExist,Microsoft.PowerShell.Commands.NewItemCommand
- 
 PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git init
 Reinitialized existing Git repository in C:/Users/bloss/OneDrive/デスクトップ/git_challenge/.git/
 PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
@@ -41,4 +31,44 @@ Author: Nachtingall765 <shu475991@gmail.com>
 Date:   Mon Feb 9 17:22:22 2026 +0900
 
     Hello, world
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> 
+PS C:\Users\bloss\OneDrive\デスクトップ\git_tutorial> cd C:\Users\bloss\OneDrive\デスクトップ\git_challenge
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git init C:\Users\bloss\OneDrive\デスクトッ
+プ\git_challenge
+Initialized empty Git repository in C:/Users/bloss/OneDrive/デスクトップ/git_challenge/.git/
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git add . hello_world.txt
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git commit -m "Hello, world!"
+[main (root-commit) bac27c0] Hello, world!
+ 2 files changed, 48 insertions(+)
+ create mode 100644 hello_world.txt
+ create mode 100644 kadai_005/kadai_005.txt
 PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge>
+                                                     > git commit -m　"こんにちは、世界！"
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git iog
+git: 'iog' is not a git command. See 'git --help'.
+
+The most similar command is
+        log
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git diff --staged
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git log
+commit bac27c0e5a9a87e7823dec8098a0bac52b295806 (HEAD -> main)
+Author: Nachtingall765 <shu475991@gmail.com>
+Date:   Tue Feb 10 17:15:14 2026 +0900
+
+    Hello, world!
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> 
