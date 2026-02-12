@@ -1,0 +1,28 @@
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challeng> git add hello_world.txt
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git commit -m "hello_world.txtを追加"
+[main 6c9fdda] hello_world.txtを追加
+ 1 file changed, 1 deletion(-)
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git add hello_world.txt
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git commit -m "日本語訳を追記"
+[main d5971c6] 日本語訳を追記
+ 1 file changed, 2 insertions(+)
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git log
+commit d5971c629eaf73dd4850c0f0351edb4bba3e2523 (HEAD -> main)
+Author: Nachtigall765 <zhu475991@gmail.com>
+Date:   Wed Feb 11 22:17:04 2026 +0900
+
+    日本語訳を追記
+
+commit 6c9fdda3ce6e347529c3756de38496f78c9cac79
+Author: Nachtigall765 <zhu475991@gmail.com>
+Date:   Wed Feb 11 22:15:17 2026 +0900
+
+    hello_world.txtを追加
+
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> git log --oneline
+d5971c6 (HEAD -> main) 日本語訳を追記
+6c9fdda hello_world.txtを追加
+7b16371 こんにちは、世界！
+747a081 Hello, world!
+91c8ea4 Hello, world!
+PS C:\Users\bloss\OneDrive\デスクトップ\git_challenge> 
